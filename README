@@ -1,0 +1,12 @@
+This repo builds a Docker container that installs python3 and nltk, then downloads the wordnet database
+The main script generates passwords matching code phrases composed of 1 letter for each part of speech
+
+e.g. ANVAN -> Adjective Noun Verb Adjective Noun
+
+The script generates 10 passwords matching the code phrase
+
+e.g.
+
+
+
+$ docker build -t wordnet-nltk . && docker run --rm wordnet-nltk python pw.py
