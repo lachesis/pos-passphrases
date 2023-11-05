@@ -44,14 +44,6 @@ def get_password(wordlists, code_phrase):
         for pos_code in code_phrase
     )
 
-#    password = []
-#    for pos_code in code_phrase:
-#        words = wordlists[pos_code]
-#        choice = secrets.choice(words)
-#        choice = choice.capitalize()
-#        password.append(choice)
-#    return ''.join(password)
-
 def save_wordlists(wordlists):
     with open('wordlists.json', 'w') as out:
         json.dump({
@@ -94,15 +86,6 @@ def main():
     max_len = MAX_LEN
 
     wordlists = get_wordlists()
-
-#    # write words out
-#    print(
-#        json.dumps({
-#            code: list(wl)
-#            for code, wl in wordlists.items()
-#        })
-#    )
-#    return
 
     # filter to max length
     wordlists = {
