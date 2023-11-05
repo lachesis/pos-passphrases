@@ -17,4 +17,4 @@ RUN python -c "import nltk; nltk.download('wordnet')"
 COPY . .
 
 # Set the command to run the application
-CMD [ "python", "dump.py" ]
+CMD [ "python", "pw.py" ]

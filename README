@@ -8,5 +8,27 @@ The script generates 10 passwords matching the code phrase
 e.g.
 
 
+```bash
+docker build -t wordnet-nltk . && docker run --rm wordnet-nltk python pw.py
 
-$ docker build -t wordnet-nltk . && docker run --rm wordnet-nltk python pw.py
+BenthalDiscusDepleteUnshodSi
+TrophicLinnetAppendUnalikeLowan
+FungalVocableDampenFemoralCoterie
+ErgoticJiquiStickleStingyPosting
+UnpavedBanshieBetokenAreolarMoll
+RatlikeMitreRelaceTertianLung
+DimmedLahSubventShrubbyHickey
+CiliaryAnapsidEmbroilMucousNan
+BenzoicRoteUpriseScrotalPlower
+AmminoRaphiaDeclawTubalDarter
+```
+
+
+
+The container can be induced to dump its wordlist for future use without needing nltk or wordnet like this:
+
+```bash
+docker build -t wordnet-nltk . && docker run --rm wordnet-nltk python dump.py > wordlists.json
+```
+
+A dump is included in the repo and kept up to date by that command
