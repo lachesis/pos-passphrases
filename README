@@ -31,4 +31,10 @@ The container can be induced to dump its wordlist for future use without needing
 docker build -t wordnet-nltk . && docker run --rm wordnet-nltk python dump.py > wordlists.json
 ```
 
-A dump is included in the repo and kept up to date by that command
+A dump is included in the repo and kept up to date by that command.
+
+This means that you can get a demo by just running:
+
+```bash
+python3 pw.py
+```
